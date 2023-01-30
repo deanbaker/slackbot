@@ -1,2 +1,2 @@
 start:
-	cd first-bolt-app && npm run dev
+	cd bolt-app && npm run dev

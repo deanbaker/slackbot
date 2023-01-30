@@ -14,7 +14,7 @@ export class CdkStack extends Stack {
     const myLambda = new Function(this, 'MyLambda', {
       runtime: Runtime.NODEJS_14_X,
       handler: 'app.handler',
-      code: Code.fromAsset('../first-bolt-app'),
+      code: Code.fromAsset('../bolt-app'),
       timeout: Duration.seconds(10),
       environment: {
         "SLACK_BOT_TOKEN": "YOUR_TOKEN_HERE",
